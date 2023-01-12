@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookourCar</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="navbarlogo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- navbar -->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+      <img class="navimage" src="images/navbarlogo.svg" alt="Bootstrap" width="30" height="24">
+    <a class="navbar-brand" href="#">Bookourcar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link disabled">Disabled</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <!-- corousel -->
+  
+  
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="images/corsol1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="images/corsol3.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="images/corsol2.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- input form -->
+  
+  <form>
+    <label for="pickup-location">Pick-up Location:</label>
+    <input type="text" id="pickup-location" name="pickup-location"><br>
+  
+    <label for="dropoff-location">Drop-off Location:</label>
+    <input type="text" id="dropoff-location" name="dropoff-location"><br>
+
+    <label for="pickup-datetime">Pick-up Date and Time:</label>
+    <input type="datetime-local" id="pickup-datetime" name="pickup-datetime"><br>
+  
+  
+    <label for="dropoff-date">Drop-off Date:</label>
+    <input type="date" id="dropoff-date" name="dropoff-date"><br>
+  
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-success" type="button">Check Availbility</button>
+    </div>
+  </form>
+
+  <hr class="line">
+
+  
+    <!-- features -->
+    <h3 style="text-align: center; margin: 45px;">Why BookOurCar?</h3>
+    
+    <div class="features">
+      <div class="cards btn btn-danger" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Best Price Guaranteed.</h5><br>
+          <p class="card-text">We guaranteed that we have very best and low price rate.</p>
+        </div>
+      </div>
+  
+      <div class="cards btn btn-primary" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">24/7 Customer Care</h5><br>
+          <p class="card-text">Our service is on 24/7 hours you can call us any time.</p>
+        </div>
+      </div>
+  
+      <div class="cards btn btn-secondary" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Home Pickups</h5><br>
+          <p class="card-text">We Provide pickup and drop to your selected point. like home or office.</p>
+        </div>
+      </div>
+  
+      <div class="cards btn btn-warning" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Easy Bookings</h5><br>
+          <p class="card-text">We have very easy and simple booking process</p>
+        </div>
+      </div>
+    </div>
+    <hr class="line">
+
+    <!-- regular trips card -->
+
+    <div class="regulartrips">
+
+      <div class="card" style="width: 18rem;">
+        <img src="images/swift.jpg" class="card-img-top" alt="car image">
+        <div class="card-body">
+          <h5 class="card-title">Mumbai to Pune</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Swift Desire</li>
+          <li class="list-group-item">★★★★★</li>
+          <li class="list-group-item">$**</li>
+        </ul>
+        <div class="card-body">
+          <a class="btn btn-primary href="#" class="card-link">Book Now</a>
+        
+        </div>
+      </div>
+  
+      <div class="card" style="width: 18rem;">
+        <img src="images/ertiga.jpg" class="card-img-top" alt="car image">
+        <div class="card-body">
+          <h5 class="card-title">Mumbai to Goa</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Ertiga</li>
+          <li class="list-group-item">★★★★★</li>
+          <li class="list-group-item">$**</li>
+        </ul>
+        <div class="card-body">
+          <a class="btn btn-primary href="#" class="card-link">Book Now</a>
+          
+        </div>
+      </div>
+  
+      <div class="card" style="width: 18rem;">
+        <img src="images/creta.png" class="card-img-top" alt="car image">
+        <div class="card-body">
+          <h5 class="card-title">Surat to Pune</h5>
+         
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Creta</li>
+          <li class="list-group-item">★★★★★</li>
+          <li class="list-group-item">$**</li>
+        </ul>
+        <div class="card-body">
+          <a class="btn btn-primary href="#" class="card-link">Book Now</a>
+          
+        </div>
+      </div>
+  
+      <div class="card" style="width: 18rem;">
+        <img src="images/innova.jpg" class="card-img-top" alt="car image">
+        <div class="card-body">
+          <h5 class="card-title">Mumbai to Amhedabad</h5>
+         
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Innova</li>
+          <li class="list-group-item">★★★★★</li>
+          <li class="list-group-item">$**</li>
+        </ul>
+        <div class="card-body">
+          <a class="btn btn-primary href="#" class="card-link">Book Now</a>
+          
+        </div>
+      </div>
+  
+      <div class="card" style="width: 18rem;">
+        <img src="images/scorpio.jpg" class="card-img-top" alt="car image">
+        <div class="card-body">
+          <h5 class="card-title">Pune to Beed</h5>
+         
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Scorpio</li>
+          <li class="list-group-item">★★★★★</li>
+          <li class="list-group-item">$**</li>
+        </ul>
+        <div class="card-body">
+          <a class="btn btn-primary href="#" class="card-link">Book Now</a>
+          
+        </div>
+      </div>
+  
+      <div class="card" style="width: 18rem;">
+        <img src="images/Endeavour.jpg" class="card-img-top" alt="car image">
+        <div class="card-body">
+          <h5 class="card-title">Mumbai to Surat</h5>
+         
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Endeavour</li>
+          <li class="list-group-item">★★★★★</li>
+          <li class="list-group-item">$**</li>
+        </ul>
+        <div class="card-body">
+          <a class="btn btn-primary href="#" class="card-link">Book Now</a>
+          
+        </div>
+      </div>
+
+    </div>
+
+     <!-- footer -->
+
+     <footer>
+      <div class="footer-left">
+        <h5>Address</h5>
+          <p> BookOurCar <br> Vishal Chs Ltd. PlotNo 17
+          Sector -18 Koperkhairane <br> New Mumbai.<br>
+        <h5>Contact details</h5> <br>+919821224861,+918424927193<br>
+        Email: bookourcar7193@gmail.com</p>
+      </div>
+      <div id="social-media-links">
+        <a href="#"> <i class="fab fa-facebook fa-3x" style="color: #4267B2;"></i> </a>
+        <a href="#"> <i class="fab fa-twitter fa-3x"></i></a>
+        <a href="#"> <i class="fab fa-instagram fa-3x" style="color:#F56040;"></i> </a><br><br>
+        <p>Copyright &copy; BookOurCar</p>
+      </div>
+      
+    </footer>
+    

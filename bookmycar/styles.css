@@ -1,0 +1,147 @@
+body {
+  margin: 16px;
+}
+
+
+.navimage{
+  width: 50px;
+  height: 50px;
+}
+
+.carousel-item{
+  background-size: cover;
+}
+#carouselExampleFade{
+  width: 100%;
+  margin: auto;
+  
+}
+
+/* inputform */
+/* Default styles for all screen sizes */
+form {
+  background-image:  url('speedline.svg');
+  width: 35%;
+  margin: 70px auto 50px auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+ 
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+input[type="text"], input[type="date"], input[type="datetime-local"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  form {
+    width: 90%;
+  }
+  
+  label {
+    font-size: 16px;
+  }
+}
+
+/* Media query for screens smaller than 480px */
+@media (max-width: 480px) {
+  form {
+    width: 100%;
+    padding: 15px;
+  }
+  
+  label {
+    font-size: 14px;
+  }
+  
+  input[type="text"], input[type="date"], input[type="datetime-local"] {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+.line {
+  border: 0;
+  margin: 22px auto ;
+  height: 3px;
+  width: 50%;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+
+/* features section */
+.features{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto 30px;
+  gap: 45px;
+  margin-bottom: 50px;
+ 
+}
+.cards{
+    text-align: center;
+    box-shadow: 0px 0px 10px #363535;
+    flex-shrink: 0;
+    border: 2px solid #000000;
+    height: 110px;
+}
+   /* regular trips */
+  
+.regulartrips{
+  margin-top: 55px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  gap: 45px;
+}
+/* footer */
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  display: flex;
+  margin-top: 55px;
+}
+
+.footer-left {
+  width: 35%;
+  margin: 5px auto auto 60px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#social-media-links {
+  width: 100%;
+  text-align:center;
+  margin: 110px auto;
+  flex-wrap: wrap;
+  
+}
+#social-media-links a {
+ width: 100%;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+}
+
